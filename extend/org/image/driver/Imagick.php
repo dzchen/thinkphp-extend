@@ -92,7 +92,7 @@ class Imagick
 
         //JPEG图像设置隔行扫描
         if ('jpeg' == $type || 'jpg' == $type) {
-            $this->im->setImageInterlaceScheme(1);
+            $this->im->setImageInterlaceScheme(Imagick::INTERLACE_PLANE);
         }
 
         //去除图像配置信息
